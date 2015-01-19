@@ -12,7 +12,7 @@ class Emily < Formula
     ENV["OPAMROOT"] = buildpath/"dependencies"
     ENV.append "PATH", buildpath/"dependencies/system/bin", File::PATH_SEPARATOR
 
-    system "yes n | opam init"
+    system "opam", "init", "--no-setup"
     system "opam", "install", "--yes", "ocamlfind", "ppx_tools", "sedlex", "containers"
 
     # Otherwise ocamlbuild will mistake the fetched dependencies for "dirty" files

@@ -1,7 +1,7 @@
 homebrew-emily
 ==============
 
-This repository contains a Homebrew formula for [Emily](http://emilylang.org), a programming language by [Andi McClure](http://runhello.com/). For more information on Emilysee the [official tutorial](https://bitbucket.org/runhello/emily/src/18a8edf8296e4734082723713545d1dbfab3f57a/doc/tutorial.md?at=default).
+This repository contains a Homebrew formula for [Emily](http://emilylang.org), a programming language by [Andi McClure](http://runhello.com/). For more information on Emily, see the [official tutorial](https://bitbucket.org/runhello/emily/src/18a8edf8296e4734082723713545d1dbfab3f57a/doc/tutorial.md?at=default).
 
 How to install
 --------------

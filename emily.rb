@@ -13,7 +13,7 @@ class Emily < Formula
     ENV.append "PATH", buildpath/"dependencies/system/bin", File::PATH_SEPARATOR
 
     system "opam", "init", "--no-setup"
-    system "opam", "install", "--yes", "ocamlfind", "ppx_tools", "sedlex", "containers"
+    system "opam", "install", "--yes", "ocamlfind", "sedlex", "containers"
 
     # Otherwise ocamlbuild will mistake the fetched dependencies for "dirty" files
     inreplace "Makefile", "ocamlbuild -no-links", "ocamlbuild -no-links -no-hygiene"

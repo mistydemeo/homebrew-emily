@@ -1,7 +1,7 @@
 class Emily < Formula
   homepage "http://emilylang.org"
-  url "https://bitbucket.org/runhello/emily/get/emily-0.1.tar.bz2"
-  sha1 "0469f40981732357d283723beb94f4eb1fc8a5f4"
+  url "https://bitbucket.org/runhello/emily/get/emily-0.2.tar.bz2"
+  sha256 "9707eb76f0c6e51d36f6e30b3df1ec5b71849cab90613ba871650dddd6768fd5"
   head "https://bitbucket.org/runhello/emily", :using => :hg,
     :branch => "stable"
 

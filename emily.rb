@@ -15,7 +15,7 @@ class Emily < Formula
     ENV.delete "OCAML_TOPLEVEL_PATH"
 
     ENV["OPAMROOT"] = buildpath/"dependencies"
-    ENV.append "PATH", buildpath/"dependencies/system/bin", File::PATH_SEPARATOR
+    ENV.prepend "PATH", buildpath/"dependencies/system/bin", File::PATH_SEPARATOR
 
     system "opam", "init", "--no-setup"
     system "opam", "install", "--yes", "ocamlfind.1.5.5", "sedlex.1.99.2", "containers.0.9", "fileutils.0.4.4"

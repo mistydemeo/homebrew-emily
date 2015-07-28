@@ -9,6 +9,11 @@ class Emily < Formula
   depends_on "opam" => :build
 
   def install
+    # delete environment variables set by opam,
+    # which may interfere with the build
+    ENV.delete "CAML_LD_LIBRARY_PATH"
+    ENV.delete "OCAML_TOPLEVEL_PATH"
+
     ENV["OPAMROOT"] = buildpath/"dependencies"
     ENV.append "PATH", buildpath/"dependencies/system/bin", File::PATH_SEPARATOR
 

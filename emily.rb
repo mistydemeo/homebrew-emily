@@ -12,6 +12,9 @@ class Emily < Formula
     url "https://bitbucket.org/runhello/emily/get/unstable.tar.bz2"
     sha256 "df2ca6a7bbb7e26eb0a91a7d4b19c7ccf2f53b8e740814f4ef90b135290e9cfd"
     version "0.3b"
+    head "https://bitbucket.org/runhello/emily",
+      :using  => :hg,
+      :branch => "unstable"
   end
 
   depends_on "ocaml" => :build
